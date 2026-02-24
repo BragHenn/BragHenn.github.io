@@ -146,3 +146,26 @@ button{
     color: var(--color-texto);
 }
 
+
+@media(max-width: 768px)
+{
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section{
+        width: 90%;
+        padding: 20px;
+    }
+
+    img{
+        width: 150px;
+    }
+}
