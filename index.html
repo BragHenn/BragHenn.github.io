@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi portafolio</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="square1">
+            <h1>EDGAR LEONARDO VILLANUEVA GUTIERREZ</h1>
+        
+            <nav>
+                <ul class="menu">
+                    <a href="#" class="button_palabra">Inicio</a>
+                    <a href="#" class="button_palabra">Sobre mí</a>
+                    <a href="#" class="button_palabra">Contacto</a>
+                </ul>
+            </nav>
+
+            <button onclick="cambiarTema()">🎮 Cambiar Tema</button>
+       
+            <script>
+            function cambiarTema() {
+                let cuerpo = document.body;
+                cuerpo.classList.toggle("modo-gamer");
+            }
+            </script>
+        </div>    
+    </header>   
+    
+
+    <main>
+        <div class="square2">
+            <h1>Futuro Diseñador</h1>
+            <div id="circulo1">
+                <img id="mi-image" src="Foto_Edgar.jpeg">
+            </div>
+            <h2>Amante de los videojuegos, el modelado 3D y futuro diseñador digital</h2>
+        </div>
+    </main>
+
+    <footer>
+        <div class="square3">
+           <h3>Contacto: </h3>
+           
+           <div class="contacto_Item">
+                <p class="red">Instagram</p>
+                <p class="dato">edgarleovg</p>
+            </div>
+
+            <div class="contacto_Item">
+                <p class="red">Facebook</p>
+                <p class="dato">Edgar Leonardo Villanueva</p>
+            </div>
+
+            <div class="contacto_Item">
+                <p class="red">E-mail</p>
+                <p class="dato">edgarlvg23@gmail.com</p>
+            </div>
+
+           </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

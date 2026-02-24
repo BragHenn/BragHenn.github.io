@@ -1,0 +1,148 @@
+:root{
+    --color-fondo: #ffffff;
+    --color-principal: #CCCCCC;
+    --color-secundario: #999999;
+    --color-box: #666666;
+    --color-borde: #333333;
+    --color-texto: #000000;
+}
+
+.modo-gamer{
+    --color-fondo: #F72585;
+    --color-principal: #B5179E;
+    --color-secundario: #7209B7;
+    --color-box: #3A0CA3;
+    --color-borde: #4361EE;
+     --color-texto: #4CC9F0;
+}
+
+.modo-gamer button{
+    border-color: var(--color-borde);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+
+body{
+    margin: 0px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: sans-serif;
+    transition: 0.4s; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.square1{
+    left: 0px;
+    right: 0px;
+    height: 180px;
+    border-style: solid;
+    border-color: var(--color-borde);
+    background-color: var(--color-box); 
+    overflow: hidden; 
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid var(--color-borde);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+
+.menu{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+    align-self: flex-start;
+}
+
+.button_palabra{
+    text-decoration: none;
+    color:var(--color-texto);
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.4s;
+}
+
+.button_palabra:hover{
+    color: var(--color-secundario);
+}
+
+.square2 {
+    width: 600px;
+    height: 420px;
+    border-style: solid;
+    border-color: var(--color-borde);
+    background-color: var(--color-box); 
+    border-radius: 10px;
+    margin: 40px auto;
+    overflow: hidden; 
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#circulo1{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: var(--color-borde);
+    border-radius: 100%; 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+#circulo1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.square3{
+    width: 600px;
+    height: 220px;
+    border-style: solid;
+    border-color: var(--color-borde);
+    background-color: var(--color-box); 
+    border-radius: 10px;
+    margin: 40px auto;
+    overflow: hidden; 
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto_Item{
+    display: flex;
+    flex-direction: column;
+}
+
+.red{
+    font-weight: bold;
+    margin: 0px;
+    color: var(--color-texto);
+}
+
+.dato{
+    margin: 0px;
+    color: var(--color-texto);
+}
+
