@@ -6,67 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Mi portafolio</title>
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="square1">
-            <h1>EDGAR LEONARDO VILLANUEVA GUTIERREZ</h1>
+            <h1>EDGAR LEONARDO VILLANUEVA GUTIÉRREZ</h1>
         
             <nav>
                 <ul class="menu">
-                    <a href="#" class="button_palabra">Inicio</a>
-                    <a href="#" class="button_palabra">Sobre mí</a>
-                    <a href="#" class="button_palabra">Contacto</a>
+                    <a href="#inicio" class="button_palabra">Inicio</a>
+                    <a href="#sobre-mi" class="button_palabra">Sobre mí</a>
+                    <a href="#mis-proyectos" class="button_palabra">Mi Portafolio</a>
+                    <a href="#contacto" class="button_palabra">Contacto</a>
                 </ul>
             </nav>
 
-            <button onclick="cambiarTema()">🎮 Cambiar Tema</button>
-       
-            <script>
-            function cambiarTema() {
-                let cuerpo = document.body;
-                cuerpo.classList.toggle("modo-gamer");
-            }
-            </script>
-        </div>    
+            <button id="button-tema" onclick="cambiarTema()">🎮 Cambiar Tema</button>    
     </header>   
     
 
     <main>
-        <div class="square2">
-            <h1>Futuro Diseñador</h1>
-            <div id="circulo1">
-                <img id="mi-image" src="Foto_Edgar.jpeg">
-            </div>
-            <h2>Amante de los videojuegos, el modelado 3D y futuro diseñador digital</h2>
+        <div>
+            <section id="inicio" class="inicio">
+                <h2>Futuro Diseñador</h2>
+                <img src="Foto_Edgar Base.jpeg" class="mi-imagen">
+                <p>Amante de los videojuegos, el modelado 3D y futuro diseñador digital.</p>
+            </section> 
+
+            <section id="sobre-mi" class="sobre-mi">
+               <h2>Sobre mí</h2> 
+
+               <img src="ELVG.png" class="mi-logo">
+               <p>Nacido en Ensenada, Baja California, México. Soy estudiante en Ingeniería en Diseño Gráfico Digital.</p>
+               <p>Desde muy pequeño mi pasión son los videojuegos y la animación.</p>
+               <p>Mi enfoque se centra en crear experiencias de calidad, utilizando herramientas como Autodesk Maya y las aplicaciones de Adobe para dar vida a personajes y entornos que cuenten una historia propia.</p>
+            </section>
+
+            <section id="mis-proyectos" class="mis-proyectos">
+                <h2>Mi portafolio</h2>
+
+                <div class="proyectos-grid">
+                    <div class="proyecto-item caja-grande1IMG">
+                        <img src="Proyectos/Halo Elite.jpg" alt="Ilustracion">
+                        <div class="proyecto-info">
+                            <h3>Ilustración hecha en Adobe Ilustrator</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item">
+                        <img src="Proyectos/Ilustracion .jpg" alt="Ilustracion">
+                        <div class="proyecto-info">
+                            <h3>Ilustración hecha en Adobe Ilustrator</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item">
+                        <img src="Proyectos/VIERNES 13.jpg" alt="Ilustracion">
+                        <div class="proyecto-info">
+                            <h3>Ilustración hecha en Adobe Ilustrator</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item">
+                        <video autoplay controls loop playsinline>
+                            <source src="Proyectos/Halo SWORD.mp4" type="video/mp4">
+                        </video>
+                        <div class="proyecto-info">
+                            <h3>Modelado 3D hecho en Blender</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item">
+                        <video autoplay controls loop playsinline>
+                            <source src="Proyectos/Video Final .mp4" type="video/mp4">
+                        </video>
+                        <div class="proyecto-info">
+                            <h3>Modelado 3D hecho en Autodesk Maya</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item">
+                        <video autoplay controls loop playsinline>
+                            <source src="Proyectos/Lightsaber Dark Side.mp4" type="video/mp4">
+                        </video>
+                        <div class="proyecto-info">
+                            <h3>Modelado 3D hecho en Autodesk Maya</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item caja-grande2IMG">
+                        <img src="Proyectos/Facehugger.jpg" alt="Ilustracion">
+                        <div class="proyecto-info">
+                            <h3>Ilustración hecha en Adobe Ilustrator</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item caja-grande3IMG">
+                        <img src="Proyectos/Fotomontaje.jpg" alt="Photoshop">
+                        <div class="proyecto-info">
+                            <h3>Imagen hecha en Adobe Photoshop</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item">
+                        <img src="Proyectos/La Masacre de Texas.jpg" alt="Ilustracion">
+                        <div class="proyecto-info">
+                            <h3>Ilustración hecha en Adobe Ilustrator</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item">
+                        <img src="Proyectos/Magnemite-Fente.jpg" alt="Modelo3D">
+                        <div class="proyecto-info">
+                            <h3>Modelado 3D hecho en Autodesk Maya</h3>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-item caja-grande6IMG">
+                        <img src="Proyectos/Japon-HALO.jpg" alt="Photoshop">
+                        <div class="proyecto-info">
+                            <h3>Imagen hecha en Adobe Photoshop</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section id="contacto" class="contacto">
+                <h2>Estas son mis redes sociales</h2>
+                <p><img src="email_logo.png" class="icon">edgar.gutierrez@cetys.edu.mx</p>
+                <p><img src="instagram_logo.png" class="icon">edgarleovg</p>
+                <p><img src="facebook_logo.png" class="icon">Edgar Leonardo Villanueva</p>
+            </section>
+        
+
         </div>
+          
     </main>
 
+
+
     <footer>
-        <div class="square3">
-           <h3>Contacto: </h3>
-           
-           <div class="contacto_Item">
-                <p class="red">Instagram</p>
-                <p class="dato">edgarleovg</p>
-            </div>
-
-            <div class="contacto_Item">
-                <p class="red">Facebook</p>
-                <p class="dato">Edgar Leonardo Villanueva</p>
-            </div>
-
-            <div class="contacto_Item">
-                <p class="red">E-mail</p>
-                <p class="dato">edgarlvg23@gmail.com</p>
-            </div>
-
-           </div>
-
-        </div>
+      <p>© 2026 BragHen23</p>
     </footer>
+
+
+    <script>
+        function cambiarTema() {
+            let cuerpo = document.body;
+            let boton = document.getElementById("button-tema");
+
+            cuerpo.classList.toggle("modo-gamer");
+
+            if(cuerpo.classList.contains("modo-gamer")){
+                boton.innerHTML = "🌐 Cambiar Tema";
+            }else{
+                boton.innerHTML = "🎮 Cambiar Tema";
+            }
+
+
+        }
+    </script>
 
 </body>
 
