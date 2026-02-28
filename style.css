@@ -248,7 +248,6 @@ footer{
 @media(max-width: 768px) /*media de los componentes*/
 {
     header{
-        flex-direction: column;
         gap: 15px;
         padding: 20px;
     }
