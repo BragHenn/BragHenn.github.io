@@ -42,7 +42,7 @@ main{
 
 section{
     background-color: var(--color-fondo);
-    width: 600px;
+    width: 700px;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -131,15 +131,16 @@ img{
 }
 
 .caja-grande2IMG{
+    grid-column: span 1;
     grid-row: span 2;
 }
 
 .caja-grande3IMG{
     grid-column: span 2;
+    grid-row: span 1;
 }
 
-
-.caja-grande6IMG{
+.caja-grande4IMG{
     grid-column: span 3;
     grid-row: span 2;
 }
@@ -274,11 +275,6 @@ button{
         padding: 20px;
     }
 
-    nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     section{
         width: 90%;
         padding: 20px;
@@ -293,10 +289,30 @@ button{
 @media (max-width: 600px) { /*media de los proyectos*/
     .proyectos-grid {
         grid-template-columns: 1fr;
-        grid-auto-rows: 250px;
+        grid-auto-rows: auto;
+        gap: 20px;
     }
-    .caja-grande, .caja-ancha {
-        grid-column: span 1;
-        grid-row: span 1;
+
+    .caja-grande1IMG, 
+    .caja-grande2IMG, 
+    .caja-grande3IMG, 
+    .caja-grande4IMG {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+        height: 300px;
     }
+
+
+    .proyecto-item{
+        height: 300px;
+    }
+
+    .proyecto-item img,
+    .proyecto-item video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+
 }
