@@ -27,9 +27,57 @@ header{
     background-color: var(--color-fondo);
     padding: 20px;
     text-align: center;
-    border: var(--color-borde);
-    border-bottom: 5px var(--color-borde);
+    border-bottom: 5px solid var(--color-borde);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-style: solid;
+}
+
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 5px solid var(--color-borde);
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    transition: 0.4s;
+}
+
+
+.modo-gamer button{
+    border-color: var(--color-borde);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+
+.menu{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+    align-self: flex-start;
+}
+
+
+.button_palabra{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color:var(--color-texto);
+    padding: 5px 10px;
+    transition: 0.4s;
+    margin-bottom: 15px;
+}
+
+
+.button_palabra:hover{
+    color: var(--color-secundario);
 }
 
 
@@ -42,17 +90,16 @@ main{
 
 section{
     background-color: var(--color-fondo);
-    width: 700px;
+    width: 650px;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border: 5px var(--color-borde);
-    border-style: solid;
+    border: 5px solid var(--color-borde);
     text-align: center;
 }
 
 
-img{
+.mi-imagen, .mi-logo{
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -79,8 +126,6 @@ img{
 
 .mi-logo{
     float: right;
-    width: 180px;
-    height: 180px;
     margin-left: 20px;
 }
 
@@ -102,6 +147,8 @@ img{
 
 
 .proyecto-item{
+    width: 100%;
+    height: 100%;
     position: relative;
     background-color: var(--color-fondo);
     border-color: var(--color-borde);
@@ -121,29 +168,9 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0;
     border: none;
 }
 
-.caja-grande1IMG{
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.caja-grande2IMG{
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.caja-grande3IMG{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.caja-grande4IMG{
-    grid-column: span 3;
-    grid-row: span 2;
-}
 
 .proyecto-info {
     position: absolute;
@@ -151,10 +178,8 @@ img{
     left: 0;
     width: 100%;
     background: var(--color-fondo);
-    padding: 10px;
     opacity: 0;
     transition: 0.3s;
-    text-align: left;
 }
 
 
@@ -165,7 +190,7 @@ img{
 
 .proyecto-info h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 15px;
     color: var(--color-texto); 
 }
 
@@ -216,51 +241,6 @@ footer{
 }
 
 
-button{
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 5px solid var(--color-borde);
-    background: var(--color-fondo);
-    color: var(--color-texto);
-    transition: 0.4s;
-}
-
-
-.modo-gamer button{
-    border-color: var(--color-borde);
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-}
-
-
-.menu{
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    gap: 20px;
-    align-self: flex-start;
-}
-
-
-.button_palabra{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    color:var(--color-texto);
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: 0.4s;
-}
-
-
-.button_palabra:hover{
-    color: var(--color-secundario);
-}
-
-
 .icon{
     width: 25px;
     height: 25px;
@@ -292,16 +272,6 @@ button{
         grid-auto-rows: auto;
         gap: 20px;
     }
-
-    .caja-grande1IMG, 
-    .caja-grande2IMG, 
-    .caja-grande3IMG, 
-    .caja-grande4IMG {
-        grid-column: span 1 !important;
-        grid-row: span 1 !important;
-        height: 300px;
-    }
-
 
     .proyecto-item{
         height: 300px;
