@@ -10,9 +10,9 @@
 .modo-gamer{
     --color-fondo: #02010a;
     --color-footer: #04052e;
-    --color-secundario: #140152;
-    --color-borde: #22007c;
-     --color-texto: #0d00a4;
+    --color-secundario: #1e0081;
+    --color-borde: #2e00ab;
+     --color-texto: #1100cf;
 }
 
 
@@ -107,7 +107,7 @@ section{
 
 
 .mi-imagen{
-    content: url("Foto_Edgar Base.jpeg");
+    content: url("Foto_Edgar_Base.jpeg");
     transition: 0.4s;
 }
 
@@ -265,7 +265,6 @@ footer{
 
 @media (max-width: 600px) { /*media de los proyectos*/
     .proyectos-grid {
-        flex-direction: column;
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
         gap: 20px;
